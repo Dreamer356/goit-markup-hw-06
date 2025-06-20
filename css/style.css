@@ -154,7 +154,7 @@ img {
   }
   
   .header-container {
-    padding: 16px;
+    padding: 0;
   }
   
   .logo-link {
@@ -386,6 +386,10 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     max-width: 320px;
   }
 }
+
+
+
+
 
 /* Features section */
 .features-section {
@@ -1184,3 +1188,48 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     transform: translate(-50%, -50%);
   }
 }
+
+.header-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Кнопка-бургер только на мобильных */
+.header-btn {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.header-btn svg {
+  display: block;
+  width: 32px;
+  height: 24px;
+}
+
+/* Скрываем бургер на планшетах и десктопах */
+@media screen and (min-width: 768px) {
+  .header-btn {
+    display: none;
+  }
+}
+
+/* Убираем двойной отступ на мобильных */
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-btn {
+    position: relative;
+    top: -40px; /* Регулируйте это значение по необходимости */
+  }
+}
+
+
