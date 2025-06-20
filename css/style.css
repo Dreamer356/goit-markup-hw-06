@@ -65,9 +65,6 @@ img {
 }
 
 .header-container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,10 +148,6 @@ img {
   .nav-list,
   .contact-list {
     display: none;
-  }
-  
-  .header-container {
-    padding: 0;
   }
   
   .logo-link {
@@ -1217,19 +1210,3 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     display: none;
   }
 }
-
-/* Убираем двойной отступ на мобильных */
-@media screen and (max-width: 767px) {
-  .header-container {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .header-btn {
-    position: relative;
-    top: -40px; /* Регулируйте это значение по необходимости */
-  }
-}
-
-
