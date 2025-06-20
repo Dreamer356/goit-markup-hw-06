@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Код для модального окна
   const customModal = document.querySelector('.custom-modal');
   const customModalOpenBtns = document.querySelectorAll('.order-service-btn');
   const customModalCloseBtn = document.querySelector('.custom-modal_close-btn');
@@ -56,5 +57,38 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
-});
 
+  // Код для мобильного меню
+  const menuButton = document.querySelector('.header-btn');
+  const mobileMenu = document.querySelector('.mobail-menu'); // Исправлено на 'mobail-menu'
+  const closeButton = document.querySelector('.close-btn');
+
+  function toggleMenu() {
+    const isMenuOpen = menuButton.getAttribute('aria-expanded') === 'true';
+    menuButton.setAttribute('aria-expanded', !isMenuOpen);
+    mobileMenu.classList.toggle('is-open');
+    
+    // Управление прокруткой тела документа
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.paddingRight = scrollbarWidth + 'px';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.paddingRight = '';
+    }
+  }
+
+  if (menuButton && mobileMenu) {
+    menuButton.addEventListener('click', toggleMenu);
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener('click', toggleMenu);
+  }
+
+  // Закрытие меню при клике на ссылки
+  const menuLinks = document.querySelectorAll('.mob-nav-link');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', toggleMenu);
+  });
+}); // Закрывающая скобка для DOMContentLoaded
