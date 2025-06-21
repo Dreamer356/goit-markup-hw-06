@@ -135,7 +135,7 @@ img {
 }
 
   .contact-link {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #434455;
@@ -171,12 +171,14 @@ img {
 
 /* Tablet styles */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .contact-list {
-    flex-direction: column;
+  .contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   
   .contact-link {
-    font-size: 12px;
+    font-size: 16px !important;
     line-height: 1.17;
     letter-spacing: 0.04em;
     padding: 0;
@@ -234,10 +236,9 @@ img {
   font-size: 36px;
   line-height: 1.11;
   color: #2E2F42;
-  text-align: left;
+  text-align: left !important;
   display: block;
 }
-
 
 .mob-nav-link.current {
   color: #404BBF;
@@ -272,6 +273,7 @@ img {
 }
 
 .mob-addr-link-phone { 
+  font-style: normal;
   font-size: 22px;
   color: #4D5AE5;
 }
@@ -412,7 +414,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 /* Mobile styles */
 @media screen and (max-width: 767px) {
   .hero-section {
-    padding: 112px 0;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                      rgba(46, 47, 66, 0.7)),
                      url('../images/bg/hero-bg-mob-2x.jpg');
@@ -426,6 +428,22 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     max-width: 320px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer-subscribe-input {
+    width: 288px;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .features-section {
+    background: none !important;
+    background-color: transparent !important;
+  }
+}
+
 
 /* Features section */
 .features-section {
@@ -714,7 +732,7 @@ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
 }
 
 .footer-subscribe-input {
-  width: 100%;
+  width: 288px;
   height: 40px;
   border: 1px solid #fff;
   border-radius: 4px;
