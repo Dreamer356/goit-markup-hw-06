@@ -103,7 +103,15 @@
     <h2 class="team-title">Our Team</h2>
     <ul class="team-list">
       <li class="team-item">
-        <img class="team-photo" src="images/image.jpg" alt="Mark Guerrero" width="264" height="260">
+        <picture>
+          <!-- Desktop -->
+          <source srcset="images/image.jpg" media="(min-width: 1158px)">
+          <!-- Tablet -->
+          <source srcset="" media="(min-width: 768px)">
+          <!-- Mobile -->
+          <source srcset="images/team-mark-mobile.jpg" media="(max-width: 767px)">
+          <img class="team-photo" src="images/team-mark-mobile.jpg" alt="Mark Guerrero" width="264" height="260">
+        </picture>
         <div class="team-info">
           <h3 class="team-name">Mark Guerrero</h3>
           <p class="team-role">Product Designer</p>
@@ -140,7 +148,12 @@
         </div>
       </li>
       <li class="team-item">
-        <img class="team-photo" src="images/image-1.jpg" alt="Tom Ford" width="264" height="260">
+        <picture>
+          <source srcset="images/team-tom-desktop.jpg" media="(min-width: 1158px)">
+          <source srcset="images/team-tom-tablet.jpg" media="(min-width: 768px)">
+          <source srcset="images/team-tom-mobile.jpg" media="(max-width: 767px)">
+          <img class="team-photo" src="images/team-tom-mobile.jpg" alt="Tom Ford" width="264" height="260">
+        </picture>
         <div class="team-info">
           <h3 class="team-name">Tom Ford</h3>
           <p class="team-role">Frontend Developer</p>
@@ -177,7 +190,12 @@
         </div>
       </li>
       <li class="team-item">
-        <img class="team-photo" src="images/image-2.jpg" alt="Camila Garcia" width="264" height="260">
+        <picture>
+          <source srcset="images/team-camila-desktop.jpg" media="(min-width: 1158px)">
+          <source srcset="images/team-camila-tablet.jpg" media="(min-width: 768px)">
+          <source srcset="images/team-camila-mobile.jpg" media="(max-width: 767px)">
+          <img class="team-photo" src="images/team-camila-mobile.jpg" alt="Camila Garcia" width="264" height="260">
+        </picture>
         <div class="team-info">
           <h3 class="team-name">Camila Garcia</h3>
           <p class="team-role">Marketing</p>
@@ -214,7 +232,12 @@
         </div>
       </li>
       <li class="team-item">
-        <img class="team-photo" src="images/image-3.jpg" alt="Daniel Wilson" width="264" height="260">
+        <picture>
+          <source srcset="images/team-daniel-desktop.jpg" media="(min-width: 1158px)">
+          <source srcset="images/team-daniel-tablet.jpg" media="(min-width: 768px)">
+          <source srcset="images/team-daniel-mobile.jpg" media="(max-width: 767px)">
+          <img class="team-photo" src="images/team-daniel-mobile.jpg" alt="Daniel Wilson" width="264" height="260">
+        </picture>
         <div class="team-info">
           <h3 class="team-name">Daniel Wilson</h3>
           <p class="team-role">UI Designer</p>
